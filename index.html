@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike agustin proyecto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f8a3c405f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">
+        <img class="logo-nike" src="images/pipa.png" alt="logo de nike" />
+      </a>
+      <nav class="navegador" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/novedades.html">Novedades</a></li>
+          <li><a href="pages/indumentaria.html">Indumentaria</a></li>
+          <li><a href="pages/accesorios.html">Accesorios</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="pages/indumentaria.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </header>
+
+    <hr />
+    <br />
+
+    <div>
+      <img src="images/blazzer.jpg" alt="blazzer" class="blazzer" />
+    </div>
+
+    <section class="imagenes">
+      <div class="container">
+        <div>
+          <i class="fa-solid fa-truck-fast fa-2xl"></i>
+          <p class="p-referencia">
+            Envios gratis a partir de $15.000 (SOLO ARGENTINA)
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-credit-card fa-2xl"></i>
+          <p class="p-referencia">De 6 a 12 cuotas sin interes</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-earth-americas fa-2xl"></i>
+          <p class="p-referencia">Envios internacionales</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-handshake-simple fa-2xl"></i>
+          <p class="p-referencia">Mercado pago y transferencias bancarias</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="gridArticulos">
+      <div>
+        <img src="images/remera negra.jpg" alt="remera negra" />
+        <div class="iluminacion">
+          <p>Musculosa Negra</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="images/short nba.png" alt="short nba violeta" />
+        <div class="iluminacion">
+          <p>Pantalon corto NBA violeta</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="images/buzo japones nike.png" alt="buzo rojo" />
+        <div class="iluminacion">
+          <p>Buzo Rojo</p>
+        </div>
+      </div>
+
+      <div class="jordan1">
+        <img src="images/jordan2.png" alt="jordan1" />
+        <div class="iluminacion">
+          <p>Air Force High Celestes</p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <footer>
+      <p class="p-footer">
+        Idioma | Terminos y Condiciones | Politicas de privacidad | Copyright
+      </p>
+    </footer>
+
+    <!-- JAVA SCRIPT DEL MENU -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

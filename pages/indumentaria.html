@@ -1,0 +1,127 @@
+<head>
+  <link rel="stylesheet" href="../style.css" />
+  <script
+    src="https://kit.fontawesome.com/8f8a3c405f.js"
+    crossorigin="anonymous"
+  ></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novedades</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <img class="logo-nike" src="../images/pipa.png" alt="logo de nike" />
+    </a>
+    <nav class="navegador" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="indumentaria.html">Indumentaria</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="pages/indumentaria.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+
+    <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+  </header>
+
+  <br />
+  <div class="gridIndumentaria">
+    <div>
+      <img
+        src="https://i0.wp.com/www.zarpado.com/wp-content/uploads/2021/04/BQ6806-100-PHCFH001-e1618338326671.png?resize=660%2C660"
+        alt="zapas2"
+      />
+      <div class="iluminacion">
+        <p>Zapatillas Blazzer</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/buzo azul.png" alt="buzo celeste claro" />
+      <div class="iluminacion">
+        <p>Buzo celeste claro</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/pantalon largo.png" alt="pantalon largo" />
+      <div class="iluminacion">
+        <p>Pantalon largo negro</p>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://www.cloudjerseys.com/upload/ttmall/img/20211016/7af834bd0a90a37443b4553601f55d55.png=f-png"
+        alt="futbol"
+      />
+      <div class="iluminacion">
+        <p>Camiseta FC Barcelona</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/pantalon corto.png" alt="pantalon corto" />
+      <div class="iluminacion">
+        <p>Pantalon corto deportivo</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/campera violeta.png" alt="campera violeta" />
+      <div class="iluminacion">
+        <p>Campera rompevientos violeta</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/buzo negro ajustado.png" alt="buzo ajustado negro" />
+      <div class="iluminacion">
+        <p>Buzo ajustado negro</p>
+      </div>
+    </div>
+    <div>
+      <img src="../images/court vision.png" alt="court vision" />
+      <div class="iluminacion">
+        <p>Zapatillas Court Vision</p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <section class="imagenes">
+    <div class="container">
+      <div>
+        <p class="titulo-barcelona">CAMISETA BARCELONA 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="videito">
+    <iframe
+      src="https://www.youtube.com/embed/aJybDLuxpx0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <br />
+
+  <footer>
+    <p class="p-footer">
+      Idioma | Terminos y Condiciones | Politicas de privacidad | Copyright
+    </p>
+  </footer>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>

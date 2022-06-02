@@ -1,0 +1,89 @@
+<head>
+  <link rel="stylesheet" href="../style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novedades</title>
+  <script
+    src="https://kit.fontawesome.com/8f8a3c405f.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <img class="logo-nike" src="../images/pipa.png" alt="logo de nike" />
+    </a>
+    <nav class="navegador" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="indumentaria.html">Indumentaria</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="pages/indumentaria.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+
+    <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+  </header>
+
+  <br />
+  <h1 style="text-align: center">
+    <hr />
+    ¡¡Tambien contamos con accesorios de todo tipo!!
+  </h1>
+  <img
+    src="https://static.nike.com/a/images/t_default/e063b0ae-5652-4b36-8cd7-befdcad1719e/gorra-sportswear-classic-99-L20MMR.png"
+    alt="gorra"
+    style="width: 370px"
+  />
+  <img
+    src="https://www.tenisstoremx.shop/wp-content/uploads/2021/10/bezecke-rukavice-nike-miler_adobespark.png"
+    alt="guantes"
+    style="width: 370px"
+  />
+  <img
+    src="https://sportline.vtexassets.com/arquivos/ids/615493-1200-auto?v=637859871727330000&width=1200&height=auto&aspect=true"
+    alt="medias"
+    style="width: 370px"
+  />
+  <img
+    src="https://cdn-adfdl.nitrocdn.com/CmhxMoXgjpHxtzrFyFXQlSOoZUesWCXw/assets/static/optimized/rev-ef7a266/image/cache/MANUFACTURER%20PHOTOS%202020/NIKE-replacement-sunglass-lenses-690x447.png"
+    alt="lentes"
+    style="width: 370px"
+  />
+  <img
+    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ML833_VW_34FR+watch-40-alum-spacegray-nc-nikese_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1630526862000%2C1630137075000"
+    alt="reloj"
+    style="width: 370px"
+  />
+  <hr />
+  <h1>Contamos tambien con la siguiente lista de accesorios:</h1>
+  <ul>
+    <li>Pulseras deportivas</li>
+    <li>Cuellitos para el invierno</li>
+    <li>Riñonera</li>
+    <li>Vinchas</li>
+  </ul>
+
+  <footer>
+    <div class="p-footer">
+      Idioma | Terminos y Condiciones | Politicas de privacidad | Copyright
+    </div>
+  </footer>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>

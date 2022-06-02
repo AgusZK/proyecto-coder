@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novedades</title>
+    <script
+      src="https://kit.fontawesome.com/8f8a3c405f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img class="logo-nike" src="../images/pipa.png" alt="logo de nike" />
+      </a>
+      <nav class="navegador" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="indumentaria.html">Indumentaria</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="pages/indumentaria.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </header>
+
+    <br />
+    <div style="text-align: center">
+      <img src="../images/oferta.png" alt="oferta" style="width: 200px" />
+    </div>
+
+    <article>
+      <img src="../images/pantalon.jpg" alt="pantalon" style="width: 286px" />
+      <img
+        src="https://http2.mlstatic.com/D_NQ_NP_730795-MLA49012628488_022022-W.jpg"
+        alt="zapatilla"
+        style="width: 300px"
+      />
+    </article>
+    <br />
+    <h3 style="text-align: center; color: #fff">
+      <span style="background-color: red"> 20% de descuento!! </span>
+    </h3>
+    <hr />
+
+    <footer>
+      <p class="p-footer">
+        Idioma | Terminos y Condiciones | Politicas de privacidad | Copyright
+      </p>
+    </footer>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
