@@ -29,6 +29,10 @@ article {
   padding-left: 20px;
 }
 
+nav ul {
+  margin-bottom: 0%;
+}
+
 nav li {
   display: inline-block;
   padding: 0px 20px;
@@ -49,6 +53,10 @@ nav li a::after {
   display: block;
   margin: auto;
   transition: 0.5s;
+}
+
+nav li a:hover {
+  color: white;
 }
 
 nav li a:hover::after {
@@ -88,20 +96,22 @@ body {
   width: 100%;
 }
 
-.container {
+.contenedor {
   display: flex;
   flex-flow: row wrap;
 }
 
-.container div {
+.contenedor div {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .p-referencia {
   font-size: 15px;
   padding: 20px 15px;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 .tituloprendas {
@@ -192,6 +202,8 @@ body {
   font-weight: 600;
   font-size: 50px;
   padding: 20px;
+  text-align: center;
+  margin-bottom: 0%;
 }
 
 .textovideito {
@@ -215,12 +227,18 @@ body {
 /*FOOTER*/
 
 footer {
-  color: gray;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pipa-negra {
+  width: 75px;
+  height: auto;
 }
 
 /* RESPONSIVE */
