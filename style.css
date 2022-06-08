@@ -56,10 +56,11 @@ nav li a::after {
 }
 
 nav li a:hover {
-  color: white;
+  color: white; /*ANIMACION COLOR DE LETRA DEL NAV*/
 }
 
 nav li a:hover::after {
+  /*ANNIMACION SUBRAYADA DEL NAV*/
   width: 100%;
 }
 
@@ -78,6 +79,7 @@ header .fa {
 }
 
 /*BODY*/
+
 body {
   background-color: #f3f3f3;
 }
@@ -142,7 +144,7 @@ body {
 }
 
 .gridArticulos div:hover {
-  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9); /*ANIMACION SOMBREADO DE FONDO*/
 }
 
 .gridArticulos div img {
