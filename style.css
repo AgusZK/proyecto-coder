@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 20px 5%;
 }
 
 .logo-nike {
@@ -68,6 +68,21 @@ ul li {
   font-size: 25px;
 }
 
+.nav-y-iconos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconosNav {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
 header i {
   height: auto;
   width: 50px;
@@ -259,6 +274,10 @@ footer {
     cursor: pointer;
   }
 
+  .navBar {
+    display: none;
+  }
+
   .logo-nike {
     width: 5rem;
     height: auto;
@@ -278,6 +297,9 @@ footer {
     text-align: left;
     z-index: 2;
     transition: 1s;
+  }
+  .iconosNav {
+    padding-left: 15px;
   }
 
   .gridArticulos {
