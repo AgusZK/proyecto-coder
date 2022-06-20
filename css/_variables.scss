@@ -1,0 +1,27 @@
+$colorBackground: #f3f3f3;
+
+// ANIMACION SOMBREADITO DE FONDO //
+
+$sombreadoDeFondo: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+
+// TODOS LOS GRIDS //
+
+@mixin grids {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+@mixin flex-para-grids {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #171717;
+  transition: 0.5s;
+}

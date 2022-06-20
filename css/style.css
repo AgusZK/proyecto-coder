@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #181a1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5%;
+}
+
+.logo-nike {
+  width: 10rem;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+article {
+  text-align: center;
+  padding-left: 20px;
+}
+
+nav ul {
+  margin-bottom: 0%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+nav li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav li a:hover {
+  color: white;
+  /*ANIMACION COLOR DE LETRA DEL NAV*/
+}
+
+nav li a:hover::after {
+  /*ANNIMACION SUBRAYADA DEL NAV*/
+  width: 100%;
+}
+
+ul li {
+  font-size: 25px;
+}
+
+.nav-y-iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iconosNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+
+header i {
+  height: auto;
+  width: 50px;
+  color: white;
+}
+
+header .fa {
+  display: none;
+}
+
+/*BODY*/
+body {
+  background-color: #f3f3f3;
+}
+
+.blazzer {
+  width: 100%;
+}
+
+.imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #171717;
+  color: white;
+  width: 100%;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.contenedor div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-referencia {
+  font-size: 15px;
+  padding: 20px 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.tituloprendas {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/*GRILLA INDEX*/
+.gridArticulos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gridArticulos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171717;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gridArticulos div:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+  /*ANIMACION SOMBREADO DE FONDO*/
+}
+
+.gridArticulos div img {
+  width: 250px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 20px;
+}
+
+.gridArticulos div p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.iluminacion {
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
+}
+
+/*GRILLA INDUMENTARIA*/
+.gridIndumentaria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gridIndumentaria div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171717;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gridIndumentaria img {
+  width: 300px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 20px;
+}
+
+.gridIndumentaria div p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/*VIDEO INDUMENTARIA-CAMISETA*/
+.titulo-barcelona {
+  font-weight: 600;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+.textovideito {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.videito {
+  text-align: center;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 900px;
+}
+
+.videito iframe {
+  width: 94.7%;
+  height: 900px;
+}
+
+/*FOOTER*/
+footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pipa-negra {
+  width: 75px;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .fa {
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .navBar {
+    display: none;
+  }
+  .logo-nike {
+    width: 5rem;
+    height: auto;
+  }
+  .navegador ul li {
+    display: block;
+  }
+  .navegador {
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .iconosNav {
+    padding-left: 15px;
+  }
+  .gridArticulos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section div i {
+    padding-left: 10px;
+  }
+  .p-referencia {
+    font-size: 12px;
+  }
+  /* RESPONSIVE INDUMENTARIA */
+  .gridIndumentaria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .titulo-barcelona {
+    font-size: 18px;
+  }
+}
+
+/* APLICANDO SASS EN PAGINA ACCESORIOS */
+.gridAccesorios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.gridAccesorios div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171717;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gridAccesorios div:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+}
+
+.gridAccesorios img {
+  width: 300px;
+  height: auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  height: auto;
+  padding: 20px;
+}
+
+.gridAccesorios p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
