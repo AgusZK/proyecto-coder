@@ -25,3 +25,35 @@ $sombreadoDeFondo: 0 0 30px 0px rgba(0, 0, 0, 0.9);
   background-color: #171717;
   transition: 0.5s;
 }
+
+// CAJA CON TEXTO E IMAGENES EN LOS GRIDS //
+.box {
+  img {
+    width: auto;
+    height: 300px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 20px;
+  }
+
+  p {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+}
+
+// MAPA //
+
+$mapaColores: (
+  fondo: #f3f3f3,
+  descuento: #ce2727,
+  articulosColor: #171717,
+);
+
+@each $lugar, $value in $mapaColores {
+  .color--#{$lugar} {
+    color: $value;
+  }
+}

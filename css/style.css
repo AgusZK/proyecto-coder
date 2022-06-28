@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap");
+.box img, .gridIndumentaria img, .gridNovedades img, .gridAccesorios img {
+  width: auto;
+  height: 300px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding: 20px;
+}
+
+.box p, .gridIndumentaria p, .gridNovedades p, .gridAccesorios p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.color--fondo {
+  color: #f3f3f3;
+}
+
+.color--descuento {
+  color: #ce2727;
+}
+
+.color--articulosColor {
+  color: #171717;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,35 +49,41 @@ header {
   padding: 20px 5%;
 }
 
-.logo-nike {
+header i {
+  height: auto;
+  width: 50px;
+  color: white;
+}
+
+header .fa {
+  display: none;
+}
+
+header .logo-nike {
   width: 10rem;
   height: auto;
   position: relative;
   float: left;
 }
 
-article {
-  text-align: center;
-  padding-left: 20px;
-}
-
-nav ul {
+header nav ul {
   margin-bottom: 0%;
 }
 
-nav li {
+header nav ul li {
   display: inline-block;
   padding: 0px 20px;
+  font-size: 25px;
 }
 
-ul li a {
+header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 17px;
   font-weight: 600;
 }
 
-nav li a::after {
+header nav ul li a::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -61,21 +94,15 @@ nav li a::after {
   transition: 0.5s;
 }
 
-nav li a:hover {
+header nav ul li a:hover {
   color: white;
-  /*ANIMACION COLOR DE LETRA DEL NAV*/
 }
 
-nav li a:hover::after {
-  /*ANNIMACION SUBRAYADA DEL NAV*/
+header nav ul li a:hover::after {
   width: 100%;
 }
 
-ul li {
-  font-size: 25px;
-}
-
-.nav-y-iconos {
+header .nav-y-iconos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +111,7 @@ ul li {
           justify-content: space-between;
 }
 
-.navBar {
+header .nav-y-iconos .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +124,7 @@ ul li {
           justify-content: space-between;
 }
 
-.iconosNav {
+header .iconosNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,14 +134,9 @@ ul li {
   padding-left: 50px;
 }
 
-header i {
-  height: auto;
-  width: 50px;
-  color: white;
-}
-
-header .fa {
-  display: none;
+article {
+  text-align: center;
+  padding-left: 20px;
 }
 
 /*BODY*/
@@ -122,11 +144,11 @@ body {
   background-color: #f3f3f3;
 }
 
-.blazzer {
+body .blazzer {
   width: 100%;
 }
 
-.imagenes {
+body .imagenes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,17 +188,11 @@ body {
           justify-content: center;
 }
 
-.p-referencia {
+.contenedor .p-referencia {
   font-size: 15px;
   padding: 20px 15px;
   font-weight: 300;
   margin-bottom: 0;
-}
-
-.tituloprendas {
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 
 /*GRILLA INDEX*/
@@ -232,7 +248,7 @@ body {
   padding: 20px;
 }
 
-.iluminacion {
+.gridArticulos .iluminacion {
   -webkit-box-shadow: 0px 0px 10px white;
           box-shadow: 0px 0px 10px white;
 }
@@ -269,19 +285,15 @@ body {
   transition: 0.5s;
 }
 
-.gridIndumentaria img {
-  width: 300px;
-  height: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding: 20px;
+.gridIndumentaria div:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+  /*ANIMACION SOMBREADO DE FONDO*/
 }
 
-.gridIndumentaria div p {
-  text-align: center;
-  color: white;
-  padding: 20px;
+.gridIndumentaria .iluminacion {
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
 }
 
 /*VIDEO INDUMENTARIA-CAMISETA*/
@@ -311,97 +323,81 @@ body {
   height: 900px;
 }
 
-/*FOOTER*/
-footer {
-  padding-left: 10px;
-  padding-right: 10px;
+/*GRID NOVEDADES*/
+.gridNovedades {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
 
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
+.gridNovedades div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171717;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.pipa-negra {
-  width: 75px;
-  height: auto;
+.gridNovedades div:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 320px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .fa {
-    display: block;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .navBar {
-    display: none;
-  }
-  .logo-nike {
-    width: 5rem;
-    height: auto;
-  }
-  .navegador ul li {
-    display: block;
-  }
-  .navegador {
-    position: absolute;
-    background: #000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .iconosNav {
-    padding-left: 15px;
-  }
-  .gridArticulos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section div i {
-    padding-left: 10px;
-  }
-  .p-referencia {
-    font-size: 12px;
-  }
-  /* RESPONSIVE INDUMENTARIA */
-  .gridIndumentaria {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .titulo-barcelona {
-    font-size: 18px;
-  }
+.gridNovedades div .iluminacion {
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
 }
 
-/* APLICANDO SASS EN PAGINA ACCESORIOS */
+.gridNovedades img {
+  width: auto;
+  height: 300px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.gridNovedades h4 {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.gridNovedades h5 {
+  color: white;
+  text-align: center;
+}
+
+.gridNovedades h5 {
+  color: white;
+  text-align: center;
+}
+
+.gridNovedades p {
+  text-align: center;
+  color: #ce2727;
+  margin: 7px;
+  padding: 0px;
+}
+
+/* GRID ACCESORIOS */
 .gridAccesorios {
   display: -ms-grid;
   display: grid;
@@ -439,19 +435,98 @@ footer {
           box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.9);
 }
 
-.gridAccesorios img {
-  width: 300px;
-  height: auto;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  height: auto;
-  padding: 20px;
+.gridAccesorios .iluminacion {
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
 }
 
-.gridAccesorios p {
-  text-align: center;
-  color: white;
-  padding: 20px;
+/*FOOTER*/
+footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pipa-negra {
+  width: 75px;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navegador {
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  header .navegador ul li {
+    display: block;
+  }
+  header .navBar {
+    display: none;
+  }
+  header .nav-y-iconos .iconosNav {
+    padding-left: 15px;
+  }
+  header .logo-nike {
+    width: 5rem;
+    height: auto;
+  }
+  header .fa {
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  header .gridArticulos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section div i {
+    padding-left: 10px;
+  }
+  .p-referencia {
+    font-size: 12px;
+  }
+  /* RESPONSIVE INDUMENTARIA */
+  .gridIndumentaria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .titulo-barcelona {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

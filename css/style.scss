@@ -15,13 +15,65 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-}
-
-.logo-nike {
-  width: 10rem;
-  height: auto;
-  position: relative;
-  float: left;
+  i {
+    height: auto;
+    width: 50px;
+    color: white;
+  }
+  .fa {
+    display: none;
+  }
+  .logo-nike {
+    width: 10rem;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+  nav {
+    ul {
+      margin-bottom: 0%;
+      li {
+        display: inline-block;
+        padding: 0px 20px;
+        font-size: 25px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 17px;
+          font-weight: 600;
+          &::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: white;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+          }
+          &:hover {
+            color: white;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .nav-y-iconos {
+    display: flex;
+    justify-content: space-between;
+    .navBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .iconosNav {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
 }
 
 article {
@@ -29,113 +81,39 @@ article {
   padding-left: 20px;
 }
 
-nav ul {
-  margin-bottom: 0%;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-nav li a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: white;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-nav li a:hover {
-  color: white; /*ANIMACION COLOR DE LETRA DEL NAV*/
-}
-
-nav li a:hover::after {
-  /*ANNIMACION SUBRAYADA DEL NAV*/
-  width: 100%;
-}
-
-ul li {
-  font-size: 25px;
-}
-
-.nav-y-iconos {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.iconosNav {
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-}
-header i {
-  height: auto;
-  width: 50px;
-  color: white;
-}
-
-header .fa {
-  display: none;
-}
-
 /*BODY*/
 
 body {
   background-color: $colorBackground;
-}
-
-.blazzer {
-  width: 100%;
-}
-
-.imagenes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  background-color: #171717;
-  color: white;
-  width: 100%;
+  .blazzer {
+    width: 100%;
+  }
+  .imagenes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #171717;
+    color: white;
+    width: 100%;
+  }
 }
 
 .contenedor {
   display: flex;
   flex-flow: row wrap;
-}
-
-.contenedor div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-referencia {
-  font-size: 15px;
-  padding: 20px 15px;
-  font-weight: 300;
-  margin-bottom: 0;
-}
-
-.tituloprendas {
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-referencia {
+    font-size: 15px;
+    padding: 20px 15px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
 
 /*GRILLA INDEX*/
@@ -148,36 +126,32 @@ body {
   grid-row-gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
-}
+  div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #171717;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: $sombreadoDeFondo; /*ANIMACION SOMBREADO DE FONDO*/
+    }
+    img {
+      width: 250px;
+      height: auto;
+      align-self: center;
+      padding: 20px;
+    }
 
-.gridArticulos div {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #171717;
-  transition: 0.5s;
-}
-
-.gridArticulos div:hover {
-  box-shadow: $sombreadoDeFondo; /*ANIMACION SOMBREADO DE FONDO*/
-}
-
-.gridArticulos div img {
-  width: 250px;
-  height: auto;
-  align-self: center;
-  padding: 20px;
-}
-
-.gridArticulos div p {
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.iluminacion {
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    p {
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+  }
+  .iluminacion {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
 }
 
 /*GRILLA INDUMENTARIA*/
@@ -190,28 +164,21 @@ body {
   grid-row-gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.gridIndumentaria div {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #171717;
-  transition: 0.5s;
-}
-
-.gridIndumentaria img {
-  width: 300px;
-  height: auto;
-  align-self: center;
-  padding: 20px;
-}
-
-.gridIndumentaria div p {
-  text-align: center;
-  color: white;
-  padding: 20px;
+  div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #171717;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: $sombreadoDeFondo; /*ANIMACION SOMBREADO DE FONDO*/
+    }
+  }
+  @extend .box;
+  .iluminacion {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
 }
 
 /*VIDEO INDUMENTARIA-CAMISETA*/
@@ -235,11 +202,71 @@ body {
   padding-bottom: 10px;
   width: 100%;
   height: 900px;
+  iframe {
+    width: 94.7%;
+    height: 900px;
+  }
 }
 
-.videito iframe {
-  width: 94.7%;
-  height: 900px;
+/*GRID NOVEDADES*/
+
+.gridNovedades {
+  @include grids;
+  div {
+    @include flex-para-grids;
+    &:hover {
+      box-shadow: $sombreadoDeFondo;
+    }
+    .iluminacion {
+      box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+  }
+  @extend .box;
+  img {
+    width: auto;
+    height: 300px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  h4 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  h5 {
+    color: white;
+    text-align: center;
+  }
+
+  h5 {
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: map-get($mapaColores, descuento);
+    margin: 7px;
+    padding: 0px;
+  }
+}
+
+/* GRID ACCESORIOS */
+
+.gridAccesorios {
+  @include grids;
+  div {
+    @include flex-para-grids;
+    &:hover {
+      box-shadow: $sombreadoDeFondo;
+    }
+  }
+  @extend .box;
+  .iluminacion {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
 }
 
 /*FOOTER*/
@@ -266,46 +293,49 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    .navegador {
+      position: absolute;
+      background: #000;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
 
-  header .fa {
-    display: block;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
+    .navBar {
+      display: none;
+    }
 
-  .navBar {
-    display: none;
-  }
+    .nav-y-iconos {
+      .iconosNav {
+        padding-left: 15px;
+      }
+    }
 
-  .logo-nike {
-    width: 5rem;
-    height: auto;
-  }
+    .logo-nike {
+      width: 5rem;
+      height: auto;
+    }
 
-  .navegador ul li {
-    display: block;
-  }
+    .fa {
+      display: block;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
 
-  .navegador {
-    position: absolute;
-    background: #000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  .iconosNav {
-    padding-left: 15px;
-  }
-
-  .gridArticulos {
-    display: flex;
-    flex-direction: column;
+    .gridArticulos {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   section div i {
@@ -325,34 +355,5 @@ footer {
 
   .titulo-barcelona {
     font-size: 18px;
-  }
-}
-
-/* APLICANDO SASS EN PAGINA ACCESORIOS */
-
-.gridAccesorios {
-  @include grids;
-  div {
-    @include flex-para-grids;
-    &:hover {
-      box-shadow: $sombreadoDeFondo;
-    }
-  }
-
-  img {
-    width: 300px;
-    height: auto;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-
-    align-self: center;
-    height: auto;
-    padding: 20px;
-  }
-
-  p {
-    text-align: center;
-    color: white;
-    padding: 20px;
   }
 }
