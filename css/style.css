@@ -265,6 +265,7 @@ body .imagenes {
   grid-row-gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 20px;
 }
 
 .gridIndumentaria div {
@@ -385,11 +386,6 @@ body .imagenes {
   text-align: center;
 }
 
-.gridNovedades h5 {
-  color: white;
-  text-align: center;
-}
-
 .gridNovedades p {
   text-align: center;
   color: #ce2727;
@@ -461,6 +457,12 @@ footer {
 }
 
 /* RESPONSIVE */
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .navBar input {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 576px) {
   header {
     display: -webkit-box;
@@ -474,12 +476,12 @@ footer {
             align-items: center;
   }
   header .navegador {
+    display: none;
     position: absolute;
     background: #000;
     height: 102vh;
     width: 200px;
     top: 0;
-    right: -200px;
     text-align: left;
     z-index: 2;
     -webkit-transition: 1s;

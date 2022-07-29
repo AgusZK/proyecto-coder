@@ -164,6 +164,7 @@ body {
   grid-row-gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 20px;
   div {
     display: flex;
     align-content: center;
@@ -235,10 +236,6 @@ body {
     text-align: center;
     padding: 5px;
   }
-  h5 {
-    color: white;
-    text-align: center;
-  }
 
   h5 {
     color: white;
@@ -291,6 +288,13 @@ footer {
 }
 
 /* RESPONSIVE */
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .navBar {
+    input {
+      display: none;
+    }
+  }
+}
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
   header {
@@ -298,12 +302,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     .navegador {
+      display: none;
       position: absolute;
       background: #000;
       height: 102vh;
       width: 200px;
       top: 0;
-      right: -200px;
       text-align: left;
       z-index: 2;
       transition: 1s;
